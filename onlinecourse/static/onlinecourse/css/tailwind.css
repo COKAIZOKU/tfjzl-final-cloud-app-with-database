@@ -1,0 +1,16 @@
+/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --tw-color-red-200: oklch(88.5% 0.062 18.334);
+    --tw-color-red-800: oklch(44.4% 0.177 26.899);
+  }
+}
+@layer utilities {
+  .tw\:text-red-200 {
+    color: var(--tw-color-red-200);
+  }
+  .tw\:text-red-800 {
+    color: var(--tw-color-red-800);
+  }
+}

@@ -1,6 +1,25 @@
 
 **General Notes**
 
+**Tailwind CSS**
+
+Tailwind is installed locally with npm. From the project root, run:
+
+```powershell
+npm ci
+npm run build:css
+```
+
+While editing templates, run `npm run watch:css` in a separate terminal alongside
+the Django development server. The generated stylesheet is stored in
+`onlinecourse/static/onlinecourse/css/tailwind.css` and loaded by all five app
+templates. Run `npm run build:css` before deploying or running `collectstatic`.
+
+Use prefixed utilities such as `class="tw:flex tw:gap-4 tw:p-4"`. Tailwind scans
+`onlinecourse/templates` for complete class names. Its CSS reset (Preflight) is
+disabled and utilities use the `tw:` prefix to preserve the existing Bootstrap
+styling. See the [Tailwind Preflight documentation](https://tailwindcss.com/docs/preflight#disabling-preflight).
+
 An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
 
 - If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser

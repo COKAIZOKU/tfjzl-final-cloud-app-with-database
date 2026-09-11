@@ -1,0 +1,12 @@
+{
+  "name": "onlinecourse-styles",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/tailwind.css -o ./onlinecourse/static/onlinecourse/css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/tailwind.css -o ./onlinecourse/static/onlinecourse/css/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
