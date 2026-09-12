@@ -1,25 +1,2 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
-@layer theme, base, components, utilities;
-@layer theme {
-  :root, :host {
-    --tw-color-mist-400: oklch(72.3% 0.014 214.4);
-    --tw-spacing: 0.25rem;
-    --tw-text-xl: 1.25rem;
-    --tw-text-xl--line-height: calc(1.75 / 1.25);
-  }
-}
-@layer utilities {
-  .tw\:mt-20\! {
-    margin-top: calc(var(--tw-spacing) * 20) !important;
-  }
-  .tw\:text-center {
-    text-align: center;
-  }
-  .tw\:text-xl {
-    font-size: var(--tw-text-xl);
-    line-height: var(--tw-leading, var(--tw-text-xl--line-height));
-  }
-  .tw\:text-mist-400 {
-    color: var(--tw-color-mist-400);
-  }
-}
+@layer theme{:root,:host{--tw-color-mist-400:oklch(72.3% .014 214.4);--tw-spacing:.25rem;--tw-text-xl:1.25rem;--tw-text-xl--line-height:calc(1.75 / 1.25)}}@layer base,components;@layer utilities{.tw\:mt-20\!{margin-top:calc(var(--tw-spacing) * 20)!important}.tw\:text-center{text-align:center}.tw\:text-xl{font-size:var(--tw-text-xl);line-height:var(--tw-leading,var(--tw-text-xl--line-height))}.tw\:text-mist-400{color:var(--tw-color-mist-400)}}body{font-family:Manrope,sans-serif}
