@@ -2,25 +2,104 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
+    --tw-color-sky-200: oklch(90.1% 0.058 230.902);
+    --tw-color-sky-500: oklch(68.5% 0.169 237.323);
+    --tw-color-blue-200: oklch(88.2% 0.059 254.128);
+    --tw-color-violet-600: oklch(54.1% 0.281 293.009);
     --tw-color-mist-400: oklch(72.3% 0.014 214.4);
+    --tw-color-white: #fff;
     --tw-spacing: 0.25rem;
+    --tw-text-xs: 0.75rem;
+    --tw-text-xs--line-height: calc(1 / 0.75);
+    --tw-text-sm: 0.875rem;
+    --tw-text-sm--line-height: calc(1.25 / 0.875);
     --tw-text-xl: 1.25rem;
     --tw-text-xl--line-height: calc(1.75 / 1.25);
+    --tw-radius-2xl: 1rem;
+    --tw-radius-3xl: 1.5rem;
   }
 }
 @layer utilities {
+  .tw\:mt-20 {
+    margin-top: calc(var(--tw-spacing) * 20);
+  }
   .tw\:mt-20\! {
     margin-top: calc(var(--tw-spacing) * 20) !important;
   }
+  .tw\:mr-1 {
+    margin-right: var(--tw-spacing);
+  }
+  .tw\:mr-2 {
+    margin-right: calc(var(--tw-spacing) * 2);
+  }
+  .tw\:ml-2 {
+    margin-left: calc(var(--tw-spacing) * 2);
+  }
+  .tw\:aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .tw\:w-\[240px\] {
+    width: 240px;
+  }
+  .tw\:max-w-\[40\%\] {
+    max-width: 40%;
+  }
+  .tw\:shrink-0 {
+    flex-shrink: 0;
+  }
+  .tw\:self-start {
+    align-self: flex-start;
+  }
+  .tw\:rounded-2xl {
+    border-radius: var(--tw-radius-2xl);
+  }
+  .tw\:rounded-3xl {
+    border-radius: var(--tw-radius-3xl);
+  }
+  .tw\:bg-sky-500 {
+    background-color: var(--tw-color-sky-500);
+  }
+  .tw\:bg-sky-500\! {
+    background-color: var(--tw-color-sky-500) !important;
+  }
+  .tw\:bg-violet-600\! {
+    background-color: var(--tw-color-violet-600) !important;
+  }
+  .tw\:object-cover {
+    object-fit: cover;
+  }
   .tw\:text-center {
     text-align: center;
+  }
+  .tw\:text-sm {
+    font-size: var(--tw-text-sm);
+    line-height: var(--tw-leading, var(--tw-text-sm--line-height));
   }
   .tw\:text-xl {
     font-size: var(--tw-text-xl);
     line-height: var(--tw-leading, var(--tw-text-xl--line-height));
   }
+  .tw\:text-xs {
+    font-size: var(--tw-text-xs);
+    line-height: var(--tw-leading, var(--tw-text-xs--line-height));
+  }
+  .tw\:text-blue-200 {
+    color: var(--tw-color-blue-200);
+  }
   .tw\:text-mist-400 {
     color: var(--tw-color-mist-400);
+  }
+  .tw\:text-sky-200 {
+    color: var(--tw-color-sky-200);
+  }
+  .tw\:text-sky-500 {
+    color: var(--tw-color-sky-500);
+  }
+  .tw\:text-sky-500\! {
+    color: var(--tw-color-sky-500) !important;
+  }
+  .tw\:text-white\! {
+    color: var(--tw-color-white) !important;
   }
 }
 @font-face {
